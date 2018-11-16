@@ -1,0 +1,15 @@
+<body>
+  Hello World
+  <script>
+    var App = {
+      init: function() {
+        this.log = Module.mono_bind_static_method("[webconsole] AlexusLab.MonoWASM.WebConsole:Log");
+        this.setConsole = Module.mono_bind_static_method("[webconsole] AlexusLab.MonoWASM.WebConsole:SetConsole");
+      }
+    };
+  </script>
+  
+  <script type="text/javascript" src="mono-config.js"></script>
+	<script type="text/javascript" src="runtime.js"></script>
+  <script async type="text/javascript" src="mono.js"></script>
+</body>
